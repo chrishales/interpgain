@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" ?>
+<casaxml xmlns="http://casa.nrao.edu/schema/psetTypes.html"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://casa.nrao.edu/schema/casa.xsd
+    file:///opt/casa/code/xmlcasa/xml/casa.xsd">
+
+    <task type="function" name="interpgain" category="manipulation">
+        <shortdescription>Linearly interpolate missing gain solutions, overwriting input caltable.</shortdescription>
+        <description>
+                
+                This task will linearly interpolate missing gain
+                solutions in a caltable for any antenna/spw where at
+                least 2 valid solutions span the missing solutions.
+                If requested, nearest extrapolation will be performed.
+                The input caltable will be overwritten.
+                
+                Only use this task if your gains exhibit phase jumps
+                jumps less than 180 degrees between any two adjacent
+                valid samples.  This will ensure that the code to
+                detect phase wraps won't have a bad day.  Of course,
+                your data should satisfy this anyway, or else
+                interpolation probably won't help you!
+                
+                Christopher A. Hales
+                Version 1.0 (tested with CASA Version 4.6.0)
+                28 September 2016
+                
+                Code available at: http://github.com/chrishales/interpgain
+                interpgain is released under a BSD 3-Clause Licence; refer
+                to the header in task_interpgain.py for details.
+                
+        </description>
+
+        <input>
+            <param type="string" name="caltable" mustexist="true">
+                <description>gain calibration table</description>
+                <value />
+            </param>
+            <param type="string" name="obsid">
+                <description>observation ID number</description>
+                <value />
+            </param>
+            <param type="string" name="field">
+                <description>field index number</description>
+                <value />
+            </param>
+            <param type="bool" name="extrapolate">
+                <description>perform nearest extrapolation?</description>
+                <value>False</value>
+            </param>
+        </input>
+
+        <returns type="void"/>
+        <example>
+
+----- Detailed description of keyword arguments -----
+
+
+       Keyword arguments:
+       
+       While this version of interpgain supports parameter selection,
+       it does not support multiple index selection (e.g. field='0,2').
+       In this case, simply rerun interpgain for each index separately.
+       
+        </example>
+    </task>
+</casaxml>
