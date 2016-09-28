@@ -3,7 +3,7 @@ interpgain
 
 [CASA](http://casa.nrao.edu/) task to linearly interpolate and optionally extrapolate missing gain calibration solutions.
 
-Lateset version: 1.0 ([download here](https://github.com/chrishales/interpgain/releases/latest))
+Latest version: 1.0 ([download here](https://github.com/chrishales/interpgain/releases/latest))
 
 Tested with: CASA Version 4.6.0
 
