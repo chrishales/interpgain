@@ -13,7 +13,7 @@ Feedback regarding interpgain is always welcome.
 
 A before and after example is shown below for phase solutions on a single spectral window, feed, and antenna. Both interpolation and extrapolation was applied.
 
-<img src="before.png" width="500"> <img src="after.png" width="500">
+<img src="before.png" width="400"> <img src="after.png" width="400">
 
 Installation
 ======
