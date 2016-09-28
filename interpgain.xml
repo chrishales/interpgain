@@ -10,8 +10,8 @@
         <description>
                 
                 This task will linearly interpolate missing gain
-                solutions in a caltable for any antenna/spw where at
-                least 2 valid solutions span the missing solutions.
+                solutions in a caltable for any antenna/spw/feed where
+                at least 2 valid solutions span the missing solutions.
                 If requested, nearest extrapolation will be performed.
                 The input caltable will be overwritten.
                 
