@@ -11,8 +11,8 @@ interpgain is released under a BSD 3-Clause Licence (open source, commercially u
 
 Feedback regarding interpgain is always welcome.
 
-A before and after example is shown below for phase solutions on a single spectral window, feed, and antenna. Both interpolation and extrapolation has been applied.
-![before](./before.png =250x "before") ![after](./after.png =250x "interp + extrap")
+A before and after example is shown below for phase solutions on a single spectral window, feed, and antenna. Both interpolation and extrapolation was applied.
+<img src="before.png" width="250"> <img src="after.png" width="250">
 
 Installation
 ======
