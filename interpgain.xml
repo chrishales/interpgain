@@ -23,12 +23,12 @@
                 interpolation probably won't help you!
                 
                 Christopher A. Hales
-                Version 1.0 (tested with CASA Version 4.6.0)
-                28 September 2016
+                Version 1.1 (tested with CASA Version 4.7.0)
+                24 October 2016
                 
                 Code available at: http://github.com/chrishales/interpgain
-                interpgain is released under a BSD 3-Clause Licence; refer
-                to the header in task_interpgain.py for details.
+                interpgain is released under a BSD 3-Clause Licence;
+                see LICENSE for details.
                 
         </description>
 
@@ -59,9 +59,8 @@
 
        Keyword arguments:
        
-       While this version of interpgain supports parameter selection,
-       it does not support multiple index selection (e.g. field='0,2').
-       In this case, simply rerun interpgain for each index separately.
+       interpgain does not support multiple index selection (e.g. field='0,2').
+       In such cases, simply rerun interpgain for each index separately.
        
         </example>
     </task>
