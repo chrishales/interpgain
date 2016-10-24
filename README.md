@@ -3,11 +3,11 @@ interpgain
 
 [CASA](http://casa.nrao.edu/) task to linearly interpolate and optionally extrapolate missing gain calibration solutions.
 
-Latest version: 1.0 ([download here](https://github.com/chrishales/interpgain/releases/latest))
+Latest version: 1.1 ([download here](https://github.com/chrishales/interpgain/releases/latest))
 
-Tested with: CASA Version 4.6.0
+Tested with: CASA Version 4.7.0
 
-interpgain is released under a BSD 3-Clause Licence (open source, commercially useable); refer to the licence in this repository or the header of ```task_interpgain.py``` for details.
+interpgain is released under a BSD 3-Clause License (open source, commercially useable); refer to LICENSE for details.
 
 Feedback regarding interpgain is always welcome.
 
@@ -24,7 +24,7 @@ Place the source files into a directory containing your measurement set. Without
 ```
 os.system('buildmytasks')
 ```
-then exit CASA. A number of files should have been produced, including ```mytasks.py```. In a fresh terminal, return to your directory, reopen CASA, and type
+then exit CASA. A number of files should have been produced, including ```mytasks.py```. Reopen CASA and type
 ```
 execfile('mytasks.py')
 ```
